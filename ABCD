@@ -161,7 +161,7 @@ quiz_html_code = """
       }
 
       if (correct === total) {
-        window.location.href = "https://example.com/secret"; // ★正解者の遷移先URLに変更してください
+        window.location.href = "https://murapage.github.io/wedding-page/"; // ★正解者の遷移先URLに変更してください
       } else {
         document.getElementById("result").textContent = `正解数：${correct} / ${total}`;
       }
