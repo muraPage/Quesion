@@ -164,7 +164,58 @@
         document.getElementById("result").textContent = `正解数：${correct} / ${total}`;
       }
     }
-  </script>
+  <script>
+  function checkAnswers() {
+    const correctAnswers = {
+      q1: "B",
+      q2: "D",
+      q3: "A",
+      q4: "C",
+      q5: "B",
+      q6: "A",
+      q7: "A",
+      q8: "D",
+      q9: "A",
+      q10: "B"
+    };
+
+    let total = 0;
+    let correct = 0;
+
+    for (let key in correctAnswers) {
+      total++;
+      const selected = document.querySelector(`input[name="${key}"]:checked`);
+      if (selected && selected.value === correctAnswers[key]) {
+        correct++;
+      }
+    }
+
+    // 結果メッセージ
+    let resultMessage = "";
+
+    if (correct === total) {
+      resultMessage = "正解です、おめでとう！";
+      document.getElementById("result").textContent = `${resultMessage} 正解数：${correct} / ${total}`;
+
+      // 2秒後にページ遷移（全問正解のみ）
+      setTimeout(() => {
+        window.location.href = "https://murapage.github.io/wedding-page/"; // ← あなたのURLに変更
+      }, 2000);
+
+    } else if (correct === total - 1) {
+      resultMessage = "がんばれ！あと1問！";
+    } else if (correct >= 7) {
+      resultMessage = "あと一息！";
+    } else {
+      resultMessage = "もう少しがんばろうか";
+    }
+
+    // 表示（全問正解以外でも出す）
+    if (correct !== total) {
+      document.getElementById("result").textContent = `${resultMessage} 正解数：${correct} / ${total}`;
+    }
+  }
+</script>
 
 </body>
 </html>
