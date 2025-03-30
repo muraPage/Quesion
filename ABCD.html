@@ -1,7 +1,3 @@
-from IPython.display import display, HTML
-
-# HTML + CSS + JavaScriptコードを表示（実際のサイトに貼り付け可能）
-quiz_html_code = """
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -56,7 +52,9 @@ quiz_html_code = """
   </style>
 </head>
 <body>
+
   <h1>2人にまつわるクイズ！</h1>
+
   <form id="quiz-form">
     <div class="question">
       <h2>Q1. 新郎と出身地が同じアーティストは？</h2>
@@ -161,15 +159,12 @@ quiz_html_code = """
       }
 
       if (correct === total) {
-        window.location.href = "https://murapage.github.io/wedding-page/"; // ★正解者の遷移先URLに変更してください
+        window.location.href = "https://example.com/secret"; // ←ここを正解者だけに見せたいURLに変更
       } else {
         document.getElementById("result").textContent = `正解数：${correct} / ${total}`;
       }
     }
   </script>
+
 </body>
 </html>
-"""
-
-display(HTML("<h3>✅ 以下のコードをそのままHTMLファイルとして保存・GitHub Pagesに使えます：</h3>"))
-display(HTML("<pre style='background:#eee; padding:10px; overflow-x:auto;'>" + quiz_html_code.replace("<", "&lt;").replace(">", "&gt;") + "</pre>"))
