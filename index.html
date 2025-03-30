@@ -135,7 +135,7 @@
       <label><input type="radio" name="q10" value="D"> D. 亀</label>
     </div>
 
-    <button id="submit-btn" type="button" onclick="checkAnswers()">結果を見る</button>
+    <button id="submit-btn" type="button" onclick="checkAnswers()">答え合わせ</button>
   </form>
 
   <p id="result"></p>
@@ -169,7 +169,7 @@
       let resultMessage = "";
 
       if (correct === total) {
-        resultMessage = "正解です、おめでとう！";
+        resultMessage = "全問正解です!おめでとう！";
         document.getElementById("result").textContent = `${resultMessage} 正解数：${correct} / ${total}`;
         setTimeout(() => {
           window.location.href = "https://murapage.github.io/wedding-page/";
