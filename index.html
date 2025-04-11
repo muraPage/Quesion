@@ -193,8 +193,7 @@
 
     <button id="submit-btn" type="button" onclick="checkAnswers()">答え合わせ</button>
   </form>
-    <script>
-    
+<script>    
 function checkAnswers() {
   const correctAnswers = {
     q1: "B",
@@ -214,30 +213,6 @@ function checkAnswers() {
     q15: "A"
   };
 
-  let total = 0;
-  let correct = 0;
-
-  for (let key in correctAnswers) {
-    total++;
-    const selected = document.querySelector(`input[name="${key}"]:checked`);
-    if (selected && selected.value === correctAnswers[key]) {
-      correct++;
-    }
-  }
-
-  if (correct === total) {
-    window.location.href = "https://murapage.github.io/Quesion/success.html";
-  } else {
-    window.location.href = `https://murapage.github.io/Quesion/fail.html?correct=${correct}`;
-  }
-
-  const allInputs = document.querySelectorAll('input[type="radio"]');
-  allInputs.forEach(input => {
-    input.disabled = true;
-  });
-}
-
-    
       let total = 0;
       let correct = 0;
 
