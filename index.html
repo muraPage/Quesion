@@ -159,6 +159,11 @@
         // 残念ページに正解数をパラメータで送る
         window.location.href = `https://murapage.github.io/Question/fail.html?correct=${correct}`;
       }
+      // すべての選択肢を無効化する（再選択できないようにする）
+      const allInputs = document.querySelectorAll('input[type="radio"]');
+      allInputs.forEach(input => {
+      input.disabled = true;
+      });
     }
   </script>
 
