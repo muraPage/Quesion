@@ -122,12 +122,51 @@
       <label><input type="radio" name="q10" value="C"> C. コアラ</label>
       <label><input type="radio" name="q10" value="D"> D. 亀</label>
     </div>
+    <div class="question">
+    <h2>Q11. 新婦がフェスに行った回数は？</h2>
+    <label><input type="radio" name="q11" value="A"> A. 0</label>
+    <label><input type="radio" name="q11" value="B"> B. 1</label>
+    <label><input type="radio" name="q11" value="C"> C. 4</label>
+    <label><input type="radio" name="q11" value="D"> D. 5</label>
+  </div>
+  
+  <div class="question">
+    <h2>Q12. 新郎が1番好きなブランドは？</h2>
+    <label><input type="radio" name="q12" value="A"> A. IRENISA</label>
+    <label><input type="radio" name="q12" value="B"> B. CULLNI</label>
+    <label><input type="radio" name="q12" value="C"> C. ATACHIMENT</label>
+    <label><input type="radio" name="q12" value="D"> D. marka</label>
+  </div>
+  
+  <div class="question">
+    <h2>Q13. 新婦が1番飼いたい猫（2025.4.11時点）は？</h2>
+    <label><input type="radio" name="q13" value="A"> A. 黒猫</label>
+    <label><input type="radio" name="q13" value="B"> B. 白猫</label>
+    <label><input type="radio" name="q13" value="C"> C. 三毛猫</label>
+    <label><input type="radio" name="q13" value="D"> D. 茶トラ</label>
+  </div>
+  
+  <div class="question">
+    <h2>Q14. 新婦がよく使うECサイトは？</h2>
+    <label><input type="radio" name="q14" value="A"> A. Amazon</label>
+    <label><input type="radio" name="q14" value="B"> B. 楽天市場</label>
+    <label><input type="radio" name="q14" value="C"> C. ちいかわマーケット</label>
+    <label><input type="radio" name="q14" value="D"> D. メルカリ</label>
+  </div>
+  
+  <div class="question">
+    <h2>Q15. 2人が休日よくすることとは？</h2>
+    <label><input type="radio" name="q15" value="A"> A. 散歩</label>
+    <label><input type="radio" name="q15" value="B"> B. 晩酌</label>
+    <label><input type="radio" name="q15" value="C"> C. ゲーム</label>
+    <label><input type="radio" name="q15" value="D"> D. ドライブ</label>
+  </div>
 
     <button id="submit-btn" type="button" onclick="checkAnswers()">答え合わせ</button>
   </form>
 
   <script>
-    function checkAnswers() {
+ function checkAnswers() {
   const correctAnswers = {
     q1: "B",
     q2: "D",
@@ -138,7 +177,12 @@
     q7: "A",
     q8: "D",
     q9: "A",
-    q10: "B"
+    q10: "B",
+    q11: "D",
+    q12: "A",
+    q13: "D",
+    q14: "C",
+    q15: "A"
   };
 
   let total = 0;
@@ -152,15 +196,13 @@
     }
   }
 
-  // 全問正解なら success.html に遷移
   if (correct === total) {
     window.location.href = "https://murapage.github.io/Question/success.html";
   } else {
-    // 不正解なら fail.html に遷移（正解数をパラメータで送る）
     window.location.href = `https://murapage.github.io/Question/fail.html?correct=${correct}`;
   }
 
-  // ✅ 入力をすべて無効化して再回答できないようにする
+  // 入力を無効化
   const allInputs = document.querySelectorAll('input[type="radio"]');
   allInputs.forEach(input => {
     input.disabled = true;
