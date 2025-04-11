@@ -128,43 +128,44 @@
 
   <script>
     function checkAnswers() {
-      const correctAnswers = {
-        q1: "B",
-        q2: "D",
-        q3: "A",
-        q4: "C",
-        q5: "B",
-        q6: "A",
-        q7: "A",
-        q8: "D",
-        q9: "A",
-        q10: "B"
-      };
+  const correctAnswers = {
+    q1: "B",
+    q2: "D",
+    q3: "A",
+    q4: "C",
+    q5: "B",
+    q6: "A",
+    q7: "A",
+    q8: "D",
+    q9: "A",
+    q10: "B"
+  };
 
-      let total = 0;
-      let correct = 0;
+  let total = 0;
+  let correct = 0;
 
-      for (let key in correctAnswers) {
-        total++;
-        const selected = document.querySelector(`input[name="${key}"]:checked`);
-        if (selected && selected.value === correctAnswers[key]) {
-          correct++;
-        }
-      }
-
-      // 全問正解 → 成功演出ページへ遷移
-      if (correct === total) {
-        window.location.href = "https://murapage.github.io/Question/success.html";
-      } else {
-        // 残念ページに正解数をパラメータで送る
-        window.location.href = `https://murapage.github.io/Question/fail.html?correct=${correct}`;
-      }
-      // すべての選択肢を無効化する（再選択できないようにする）
-      const allInputs = document.querySelectorAll('input[type="radio"]');
-      allInputs.forEach(input => {
-      input.disabled = true;
-      });
+  for (let key in correctAnswers) {
+    total++;
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (selected && selected.value === correctAnswers[key]) {
+      correct++;
     }
+  }
+
+  // 全問正解なら success.html に遷移
+  if (correct === total) {
+    window.location.href = "https://murapage.github.io/Quesion/success.html";
+  } else {
+    // 不正解なら fail.html に遷移（正解数をパラメータで送る）
+    window.location.href = `https://murapage.github.io/Quesion/fail.html?correct=${correct}`;
+  }
+
+  // ✅ 入力をすべて無効化して再回答できないようにする
+  const allInputs = document.querySelectorAll('input[type="radio"]');
+  allInputs.forEach(input => {
+    input.disabled = true;
+  });
+}
   </script>
 
 </body>
