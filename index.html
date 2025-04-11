@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,10 +12,19 @@
       margin: 0;
       text-align: center;
     }
+
     h1 {
       font-size: 32px;
       margin-bottom: 20px;
     }
+
+    .section-heading {
+      font-size: 24px;
+      color: #6a1b9a;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
     .question {
       text-align: left;
       background: white;
@@ -28,14 +36,17 @@
       margin-right: auto;
       box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
+
     .question h2 {
       font-size: 18px;
       margin-bottom: 10px;
     }
+
     .question label {
       display: block;
       margin: 5px 0;
     }
+
     #submit-btn {
       font-size: 18px;
       padding: 10px 20px;
@@ -49,9 +60,12 @@
 </head>
 <body>
 
-  <h1>クイズ！2人にまつわること!</h1>
+  <h1>クイズ！2人にまつわること！</h1>
 
   <form id="quiz-form">
+    
+    <h2 class="section-heading">【新郎のこと】</h2>
+
     <div class="question">
       <h2>Q1. 新郎と出身地が同じアーティストは？</h2>
       <label><input type="radio" name="q1" value="A"> A. 藤原基央 (BUMP OF CHICKEN)</label>
@@ -59,6 +73,7 @@
       <label><input type="radio" name="q1" value="C"> C. 浜田省吾</label>
       <label><input type="radio" name="q1" value="D"> D. 大森元貴 (Mrs. GREEN APPLE)</label>
     </div>
+
     <div class="question">
       <h2>Q2. 新郎の好きな食べ物は？</h2>
       <label><input type="radio" name="q2" value="A"> A. 餃子</label>
@@ -66,55 +81,64 @@
       <label><input type="radio" name="q2" value="C"> C. 尾道ラーメン</label>
       <label><input type="radio" name="q2" value="D"> D. うまいもの</label>
     </div>
+
     <div class="question">
-      <h2>Q3. 新婦の好きな食べ物は？</h2>
-      <label><input type="radio" name="q3" value="A"> A. チョコ</label>
-      <label><input type="radio" name="q3" value="B"> B. トマト</label>
-      <label><input type="radio" name="q3" value="C"> C. ドーナッツ</label>
-      <label><input type="radio" name="q3" value="D"> D. 豆乳ビスケット</label>
+      <h2>Q3. 新郎新婦の出会いは？</h2>
+      <label><input type="radio" name="q3" value="A"> A. バスケ</label>
+      <label><input type="radio" name="q3" value="B"> B. バーの客と店員</label>
+      <label><input type="radio" name="q3" value="C"> C. バイトの先輩後輩</label>
+      <label><input type="radio" name="q3" value="D"> D. バンドのメンバー</label>
     </div>
+
     <div class="question">
-      <h2>Q4. 新婦のちいかわの推しは？</h2>
-      <label><input type="radio" name="q4" value="A"> A. ちいかわ</label>
-      <label><input type="radio" name="q4" value="B"> B. ハチワレ</label>
-      <label><input type="radio" name="q4" value="C"> C. ラッコ</label>
-      <label><input type="radio" name="q4" value="D"> D. モモンガ</label>
+      <h2>Q4. 新郎が無人島に道具を一つ持っていくなら？</h2>
+      <label><input type="radio" name="q4" value="A"> A. スマホ</label>
+      <label><input type="radio" name="q4" value="B"> B. 四次元ポケット</label>
+      <label><input type="radio" name="q4" value="C"> C. ナイフ</label>
+      <label><input type="radio" name="q4" value="D"> D. 水上バイク</label>
     </div>
+
     <div class="question">
-      <h2>Q5. 新郎新婦の共通の趣味は？</h2>
-      <label><input type="radio" name="q5" value="A"> A. ポケカ</label>
-      <label><input type="radio" name="q5" value="B"> B. ねこ探し</label>
-      <label><input type="radio" name="q5" value="C"> C. ゲーム</label>
-      <label><input type="radio" name="q5" value="D"> D. キャンプ</label>
+      <h2>Q5. 新郎が自分を動物に例えるなら？</h2>
+      <label><input type="radio" name="q5" value="A"> A. カラス</label>
+      <label><input type="radio" name="q5" value="B"> B. ライオン</label>
+      <label><input type="radio" name="q5" value="C"> C. イノシシ</label>
+      <label><input type="radio" name="q5" value="D"> D. 鶴</label>
     </div>
+
     <div class="question">
-      <h2>Q6. 新郎新婦の出会いは？</h2>
-      <label><input type="radio" name="q6" value="A"> A. バスケ</label>
-      <label><input type="radio" name="q6" value="B"> B. バーの客と店員</label>
-      <label><input type="radio" name="q6" value="C"> C. バイトの先輩後輩</label>
-      <label><input type="radio" name="q6" value="D"> D. バンドのメンバー</label>
+      <h2>Q6. 新郎が1番好きなブランドは？</h2>
+      <label><input type="radio" name="q6" value="A"> A. IRENISA</label>
+      <label><input type="radio" name="q6" value="B"> B. CULLNI</label>
+      <label><input type="radio" name="q6" value="C"> C. ATACHIMENT</label>
+      <label><input type="radio" name="q6" value="D"> D. marka</label>
     </div>
+        <h2 class="section-heading">【新婦のこと】</h2>
+
     <div class="question">
-      <h2>Q7. 新郎が無人島に道具を一つ持っていくなら？</h2>
-      <label><input type="radio" name="q7" value="A"> A. スマホ</label>
-      <label><input type="radio" name="q7" value="B"> B. 四次元ポケット</label>
-      <label><input type="radio" name="q7" value="C"> C. ナイフ</label>
-      <label><input type="radio" name="q7" value="D"> D. 水上バイク</label>
+      <h2>Q7. 新婦の好きな食べ物は？</h2>
+      <label><input type="radio" name="q7" value="A"> A. チョコ</label>
+      <label><input type="radio" name="q7" value="B"> B. トマト</label>
+      <label><input type="radio" name="q7" value="C"> C. ドーナッツ</label>
+      <label><input type="radio" name="q7" value="D"> D. 豆乳ビスケット</label>
     </div>
+
     <div class="question">
-      <h2>Q8. 新婦が無人島に道具を一つ持っていくなら？</h2>
-      <label><input type="radio" name="q8" value="A"> A. チョコ</label>
-      <label><input type="radio" name="q8" value="B"> B. ねこ</label>
-      <label><input type="radio" name="q8" value="C"> C. 水</label>
-      <label><input type="radio" name="q8" value="D"> D. マッチ</label>
+      <h2>Q8. 新婦のちいかわの推しは？</h2>
+      <label><input type="radio" name="q8" value="A"> A. ちいかわ</label>
+      <label><input type="radio" name="q8" value="B"> B. ハチワレ</label>
+      <label><input type="radio" name="q8" value="C"> C. ラッコ</label>
+      <label><input type="radio" name="q8" value="D"> D. モモンガ</label>
     </div>
+
     <div class="question">
-      <h2>Q9. 新郎が自分を動物に例えるなら？</h2>
-      <label><input type="radio" name="q9" value="A"> A. カラス</label>
-      <label><input type="radio" name="q9" value="B"> B. ライオン</label>
-      <label><input type="radio" name="q9" value="C"> C. イノシシ</label>
-      <label><input type="radio" name="q9" value="D"> D. 鶴</label>
+      <h2>Q9. 新婦が無人島に道具を一つ持っていくなら？</h2>
+      <label><input type="radio" name="q9" value="A"> A. チョコ</label>
+      <label><input type="radio" name="q9" value="B"> B. ねこ</label>
+      <label><input type="radio" name="q9" value="C"> C. 水</label>
+      <label><input type="radio" name="q9" value="D"> D. マッチ</label>
     </div>
+
     <div class="question">
       <h2>Q10. 新婦が自分を動物に例えるなら？</h2>
       <label><input type="radio" name="q10" value="A"> A. 鹿</label>
@@ -122,92 +146,82 @@
       <label><input type="radio" name="q10" value="C"> C. コアラ</label>
       <label><input type="radio" name="q10" value="D"> D. 亀</label>
     </div>
+
     <div class="question">
-    <h2>Q11. 新婦がフェスに行った回数は？</h2>
-    <label><input type="radio" name="q11" value="A"> A. 0</label>
-    <label><input type="radio" name="q11" value="B"> B. 1</label>
-    <label><input type="radio" name="q11" value="C"> C. 4</label>
-    <label><input type="radio" name="q11" value="D"> D. 5</label>
-  </div>
-  
-  <div class="question">
-    <h2>Q12. 新郎が1番好きなブランドは？</h2>
-    <label><input type="radio" name="q12" value="A"> A. IRENISA</label>
-    <label><input type="radio" name="q12" value="B"> B. CULLNI</label>
-    <label><input type="radio" name="q12" value="C"> C. ATACHIMENT</label>
-    <label><input type="radio" name="q12" value="D"> D. marka</label>
-  </div>
-  
-  <div class="question">
-    <h2>Q13. 新婦が1番飼いたい猫（2025.4.11時点）は？</h2>
-    <label><input type="radio" name="q13" value="A"> A. 黒猫</label>
-    <label><input type="radio" name="q13" value="B"> B. 白猫</label>
-    <label><input type="radio" name="q13" value="C"> C. 三毛猫</label>
-    <label><input type="radio" name="q13" value="D"> D. 茶トラ</label>
-  </div>
-  
-  <div class="question">
-    <h2>Q14. 新婦がよく使うECサイトは？</h2>
-    <label><input type="radio" name="q14" value="A"> A. Amazon</label>
-    <label><input type="radio" name="q14" value="B"> B. 楽天市場</label>
-    <label><input type="radio" name="q14" value="C"> C. ちいかわマーケット</label>
-    <label><input type="radio" name="q14" value="D"> D. メルカリ</label>
-  </div>
-  
-  <div class="question">
-    <h2>Q15. 2人が休日よくすることとは？</h2>
-    <label><input type="radio" name="q15" value="A"> A. 散歩</label>
-    <label><input type="radio" name="q15" value="B"> B. 晩酌</label>
-    <label><input type="radio" name="q15" value="C"> C. ゲーム</label>
-    <label><input type="radio" name="q15" value="D"> D. ドライブ</label>
-  </div>
+      <h2>Q11. 新婦がフェスに行った回数は？</h2>
+      <label><input type="radio" name="q11" value="A"> A. 0</label>
+      <label><input type="radio" name="q11" value="B"> B. 1</label>
+      <label><input type="radio" name="q11" value="C"> C. 4</label>
+      <label><input type="radio" name="q11" value="D"> D. 5</label>
+    </div>
+
+    <div class="question">
+      <h2>Q12. 新婦が1番飼いたい猫（2025.4.11時点）は？</h2>
+      <label><input type="radio" name="q12" value="A"> A. 黒猫</label>
+      <label><input type="radio" name="q12" value="B"> B. 白猫</label>
+      <label><input type="radio" name="q12" value="C"> C. 三毛猫</label>
+      <label><input type="radio" name="q12" value="D"> D. 茶トラ</label>
+    </div>
+
+    <div class="question">
+      <h2>Q13. 新婦がよく使うECサイトは？</h2>
+      <label><input type="radio" name="q13" value="A"> A. Amazon</label>
+      <label><input type="radio" name="q13" value="B"> B. 楽天市場</label>
+      <label><input type="radio" name="q13" value="C"> C. ちいかわマーケット</label>
+      <label><input type="radio" name="q13" value="D"> D. メルカリ</label>
+    </div>
+
+    <h2 class="section-heading">【2人のこと】</h2>
+
+    <div class="question">
+      <h2>Q14. 新郎新婦の共通の趣味は？</h2>
+      <label><input type="radio" name="q14" value="A"> A. ポケカ</label>
+      <label><input type="radio" name="q14" value="B"> B. ねこ探し</label>
+      <label><input type="radio" name="q14" value="C"> C. ゲーム</label>
+      <label><input type="radio" name="q14" value="D"> D. キャンプ</label>
+    </div>
+
+    <div class="question">
+      <h2>Q15. 2人が休日よくすることとは？</h2>
+      <label><input type="radio" name="q15" value="A"> A. 散歩</label>
+      <label><input type="radio" name="q15" value="B"> B. 晩酌</label>
+      <label><input type="radio" name="q15" value="C"> C. ゲーム</label>
+      <label><input type="radio" name="q15" value="D"> D. ドライブ</label>
+    </div>
 
     <button id="submit-btn" type="button" onclick="checkAnswers()">答え合わせ</button>
   </form>
 
   <script>
- function checkAnswers() {
-  const correctAnswers = {
-    q1: "B",
-    q2: "D",
-    q3: "A",
-    q4: "C",
-    q5: "B",
-    q6: "A",
-    q7: "A",
-    q8: "D",
-    q9: "A",
-    q10: "B",
-    q11: "D",
-    q12: "A",
-    q13: "D",
-    q14: "C",
-    q15: "A"
-  };
+    function checkAnswers() {
+      const correctAnswers = {
+        q1: "B", q2: "D", q3: "A", q4: "A", q5: "A",
+        q6: "A", q7: "A", q8: "C", q9: "D", q10: "B",
+        q11: "D", q12: "D", q13: "C", q14: "B", q15: "A"
+      };
 
-  let total = 0;
-  let correct = 0;
+      let total = 0;
+      let correct = 0;
 
-  for (let key in correctAnswers) {
-    total++;
-    const selected = document.querySelector(`input[name="${key}"]:checked`);
-    if (selected && selected.value === correctAnswers[key]) {
-      correct++;
+      for (let key in correctAnswers) {
+        total++;
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          correct++;
+        }
+      }
+
+      if (correct === total) {
+        window.location.href = "https://murapage.github.io/Question/success.html";
+      } else {
+        window.location.href = `https://murapage.github.io/Question/fail.html?correct=${correct}`;
+      }
+
+      const allInputs = document.querySelectorAll('input[type="radio"]');
+      allInputs.forEach(input => {
+        input.disabled = true;
+      });
     }
-  }
-
-  if (correct === total) {
-    window.location.href = "https://murapage.github.io/Question/success.html";
-  } else {
-    window.location.href = `https://murapage.github.io/Question/fail.html?correct=${correct}`;
-  }
-
-  // 入力を無効化
-  const allInputs = document.querySelectorAll('input[type="radio"]');
-  allInputs.forEach(input => {
-    input.disabled = true;
-  });
-}
   </script>
 
 </body>
